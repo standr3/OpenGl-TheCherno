@@ -25,8 +25,7 @@ int main(void)
 	if (glewInit() != GLEW_OK)
 		std::cout << "Error!" << std::endl;
 
-	unsigned a;
-	glGenBuffers(1, &a);
+	std::cout << glGetString(GL_VERSION) << std::endl;
 
 	/* Loop until the user closes the window */
 	while (!glfwWindowShouldClose(window))
